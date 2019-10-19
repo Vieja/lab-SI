@@ -1,0 +1,21 @@
+(define (problem p1)
+(:domain farmer)
+(:objects wilk owca kapusta - obiekt)
+(:init
+	(na-brzegu west wilk)
+	(na-brzegu west owca)
+	(na-brzegu west kapusta)
+	(aktualny-brzeg west)
+	(nie-lubi wilk owca)
+	(nie-lubi owca wilk)
+	(nie-lubi kapusta owca)
+	(nie-lubi owca kapusta)
+)
+(:goal 
+	(and
+		(na-brzegu east wilk)
+		(na-brzegu east owca)
+		(na-brzegu east kapusta)
+	)
+)
+)
